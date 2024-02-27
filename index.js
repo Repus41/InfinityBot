@@ -3,7 +3,7 @@ const client = new Discord.Client(
     {intents:["GUILDS","GUILD_MEMBERS","GUILD_MESSAGES"]}
 )
 
-client.login("MTIxMTczNDk0NTU3MjMyMzQ0OA.Gt00aP.YdmOJd0v4rPQxsi5BFCZlO7ZPHcMLiFXkYoD-k")
+client.login(process.env.token)
 
 client.on("ready", () => {
     console.log("Bot Online")
